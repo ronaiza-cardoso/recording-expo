@@ -19,6 +19,18 @@
     "ios": {
       "supportsTablet": true
     },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "novoic",
+            "project": "recording",
+            "authToken": "032290fbc5ce4675843172d6c3bb6663ae7e2b812a2040b0b181ee7452dfa16d"
+          }
+        }
+      ]
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     }
